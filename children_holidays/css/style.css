@@ -1170,4 +1170,19 @@ h1 {
   .about__discount {
     width: 100%;
   }
+  .consultation_right_trip {
+    margin: 0 0 23px 0;
+  }
+  .fill_form_text {
+    text-align: center;
+  }
+  .consultation__recall__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .consultation__recall_text {
+    margin: 0 0 15px 0;
+  }
 }
