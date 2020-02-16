@@ -1185,4 +1185,30 @@ h1 {
   .consultation__recall_text {
     margin: 0 0 15px 0;
   }
+  /*тестовый блок*/
+  .special_offer_photos_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .special_offer_photo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 0 0 15px 0;
+  }
+  .special_offer_photo:last-child {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    margin: 0;
+  }
+  .special_offer .special_offer_photos_row .item_1,
+  .special_offer .special_offer_photos_row .item_2 {
+    margin: 0 0 15px 0;
+  }
 }

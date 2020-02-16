@@ -1084,4 +1084,25 @@ h1{
 			margin: 0 0 15px 0;
 		}
 	}
+
+	/*тестовый блок*/
+	.special_offer_photos_row{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.special_offer_photo{
+		flex: 0 1 100%;
+		margin: 0 0 15px 0;
+	}
+
+	.special_offer_photo:last-child{
+		flex: 0 1 100%;
+		margin: 0;
+	}
+
+	.special_offer .special_offer_photos_row .item_1, 
+	.special_offer .special_offer_photos_row .item_2{
+		margin: 0 0 15px 0;
+	}
 }
