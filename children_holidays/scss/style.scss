@@ -1049,5 +1049,21 @@ h1{
 }
 
 @media screen and (max-width: 575.98px) {
+	.header__contacts{
+		flex-direction: column;
+		text-align: center;
+		min-width: 100%;
+	}
 
+	.header__info__phones {
+   	margin: 0 0 20px 0;
+	}
+
+	.header__phones__recall{
+		min-width: 50%;
+	}
+
+	.about__discount{
+		width: 100%;
+	}
 }

@@ -941,6 +941,12 @@ h1 {
   .container {
     max-width: 750px;
   }
+  .special_offer .consultation__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
   .education_step_number {
     margin: 0 0 15px 0;
   }
@@ -1143,5 +1149,25 @@ h1 {
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .header__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    min-width: 100%;
+  }
+  .header__info__phones {
+    margin: 0 0 20px 0;
+  }
+  .header__phones__recall {
+    min-width: 50%;
+  }
+  .about__discount {
+    width: 100%;
   }
 }
