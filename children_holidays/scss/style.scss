@@ -869,6 +869,9 @@ h1{
 		&:after{
 			display: none;
 		}
+		&:last-child{
+			margin: 0;
+		}
 	}
 }
 
@@ -1062,9 +1065,34 @@ h1{
 
 	.comfort_conditions_info_row, 
 	.employees_best_team_about_row,
-	.employees_boss_row{
+	.employees_boss_row,
+	.education_steps_row{
 		margin: 0;
 		max-width: 100%;
+	}
+
+	.education{
+		padding-bottom: 35px;
+	}
+
+	.education_steps{
+
+		&_headline{
+			margin: 0 0 35px 0;
+		}
+		&_row{
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+	}
+
+	.education_step{
+		&_number, &_image{
+			margin: 0 0 10px 0;
+		}
+		&_name{
+			margin: 0 0 15px 0;
+		}
 	}
 
 	.comfort_conditions .comfort_condition_headline{

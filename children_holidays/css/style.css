@@ -995,6 +995,9 @@ h1 {
   .education_step:after {
     display: none;
   }
+  .education_step:last-child {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1166,9 +1169,30 @@ h1 {
   }
   .comfort_conditions_info_row,
   .employees_best_team_about_row,
-  .employees_boss_row {
+  .employees_boss_row,
+  .education_steps_row {
     margin: 0;
     max-width: 100%;
+  }
+  .education {
+    padding-bottom: 35px;
+  }
+  .education_steps_headline {
+    margin: 0 0 35px 0;
+  }
+  .education_steps_row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .education_step_number, .education_step_image {
+    margin: 0 0 10px 0;
+  }
+  .education_step_name {
+    margin: 0 0 15px 0;
   }
   .comfort_conditions .comfort_condition_headline {
     margin: 0 0 15px 0;
