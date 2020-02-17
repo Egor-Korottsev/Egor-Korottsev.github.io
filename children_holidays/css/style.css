@@ -90,6 +90,7 @@ ul li {
 
 img {
   vertical-align: top;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -947,6 +948,30 @@ h1 {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .employees_boss_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .employees_boss_image {
+    margin: 0 0 30px 0;
+  }
+  .employees_boss_position {
+    margin: 0 0 35px 0;
+  }
+  .employees_boss_experience ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
   .education_step_number {
     margin: 0 0 15px 0;
   }
@@ -1113,30 +1138,6 @@ h1 {
   .employees_headline_small {
     margin: 0 0 44px 0;
   }
-  .employees_boss_row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .employees_boss_image {
-    margin: 0 0 30px 0;
-  }
-  .employees_boss_position {
-    margin: 0 0 35px 0;
-  }
-  .employees_boss_experience ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
   .employees .employees_best_team_about_row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1163,8 +1164,11 @@ h1 {
   .comfort_condition_row img {
     margin: 0 0 15px 0;
   }
-  .comfort_conditions_info_row {
+  .comfort_conditions_info_row,
+  .employees_best_team_about_row,
+  .employees_boss_row {
     margin: 0;
+    max-width: 100%;
   }
   .comfort_conditions .comfort_condition_headline {
     margin: 0 0 15px 0;
@@ -1228,6 +1232,25 @@ h1 {
   }
   .special_offer .special_offer_photos_row .item_1,
   .special_offer .special_offer_photos_row .item_2 {
+    margin: 0 0 15px 0;
+  }
+  .employees {
+    padding: 30px 0;
+  }
+  .employees_best_team_headline {
+    margin: 0 0 30px 0;
+  }
+  .employee_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .employee img {
+    margin: 0 0 15px 0;
+  }
+  .employee_name {
     margin: 0 0 15px 0;
   }
 }

@@ -68,7 +68,7 @@ button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
-img{vertical-align: top;}
+img{vertical-align: top; max-width: 100%}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
@@ -825,6 +825,25 @@ h1{
 		flex-direction: column;
 	}
 
+	.employees{
+		&_boss {
+			&_row{
+				flex-direction: column;
+			}
+			&_image{
+				margin: 0 0 30px 0;
+			}
+			&_position{
+				margin: 0 0 35px 0;
+			}
+			&_experience ul{
+				display: flex;
+    			flex-direction: column;
+    			align-items: center;
+			}
+		}
+	}
+
 	.education{
 		&_step_number{
 			margin: 0 0 15px 0;
@@ -1016,23 +1035,6 @@ h1{
 			}
 		}
 
-		&_boss {
-			&_row{
-				flex-direction: column;
-			}
-			&_image{
-				margin: 0 0 30px 0;
-			}
-			&_position{
-				margin: 0 0 35px 0;
-			}
-			&_experience ul{
-				display: flex;
-    			flex-direction: column;
-    			align-items: center;
-			}
-		}
-
 		.employees_best_team_about_row{
 			flex-wrap: wrap;
 		}
@@ -1058,8 +1060,11 @@ h1{
 		}
 	}
 
-	.comfort_conditions_info_row{
+	.comfort_conditions_info_row, 
+	.employees_best_team_about_row,
+	.employees_boss_row{
 		margin: 0;
+		max-width: 100%;
 	}
 
 	.comfort_conditions .comfort_condition_headline{
@@ -1125,6 +1130,26 @@ h1{
 		margin: 0 0 15px 0;
 	}
 
+	.employees{
+		padding: 30px 0;
+		&_best_team_headline{
+			margin: 0 0 30px 0;
+		}
+	}
 
+	.employee{
+		&_row{
+			flex-direction: column;
+			text-align: center;
+		}
+		
+		img{
+			margin: 0 0 15px 0;
+		}
+
+		&_name{
+			margin: 0 0 15px 0;
+		}
+	}
 
 }
