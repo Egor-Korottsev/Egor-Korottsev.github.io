@@ -1163,6 +1163,9 @@ h1 {
   .comfort_condition_row img {
     margin: 0 0 15px 0;
   }
+  .comfort_conditions_info_row {
+    margin: 0;
+  }
   .comfort_conditions .comfort_condition_headline {
     margin: 0 0 15px 0;
   }
