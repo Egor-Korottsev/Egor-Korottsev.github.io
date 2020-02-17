@@ -1152,6 +1152,22 @@ h1 {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .comfort_condition_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .comfort_condition_row img {
+    margin: 0 0 15px 0;
+  }
+  .comfort_conditions .comfort_condition_headline {
+    margin: 0 0 15px 0;
+  }
+}
+
 @media screen and (max-width: 575.98px) {
   .header__contacts {
     -webkit-box-orient: vertical;

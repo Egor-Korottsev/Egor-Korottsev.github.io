@@ -1048,6 +1048,21 @@ h1{
 	}
 }
 
+@media screen and (max-width: 620px) {
+	.comfort_condition_row{
+		flex-direction: column;
+		text-align: center;
+
+		& img{
+			margin: 0 0 15px 0;
+		}
+	}
+
+	.comfort_conditions .comfort_condition_headline{
+		margin: 0 0 15px 0;
+	}
+}
+
 @media screen and (max-width: 575.98px) {
 	.header__contacts{
 		flex-direction: column;
@@ -1105,4 +1120,7 @@ h1{
 	.special_offer .special_offer_photos_row .item_2{
 		margin: 0 0 15px 0;
 	}
+
+
+
 }
