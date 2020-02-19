@@ -921,6 +921,20 @@ h1 {
   flex: 50%;
 }
 
+.favourite_pictures_slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.favourite_pictures_slider .slick-list {
+  overflow: hidden;
+}
+
 /* Адаптивная сетка */
 @media screen and (max-width: 942px) {
   .consulation__form {

@@ -798,6 +798,21 @@ h1{
 	}
 }
 
+.favourite_pictures_slider{
+	//margin: 0 0 30px 0; 
+
+	.slick-track {
+		display: flex;
+		align-items: flex-start;
+		text-align: center;
+	}
+
+	.slick-list{
+		overflow: hidden;
+	}
+}
+
+
 /* Адаптивная сетка */
 
 // Большие девайсы (большие десктопы, < 1200px)
