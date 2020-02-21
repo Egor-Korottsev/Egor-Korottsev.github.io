@@ -38,3 +38,15 @@ $(document).ready(function() {
     ]
 	});
 });
+
+//.where_trip
+// изменение цвета при наведении.
+var tripElement1 = document.getElementById('where_trip_choices_region-1');
+var tripElement2 = document.getElementById('where_trip_choices_region-2');
+var tripElement3 = document.getElementById('where_trip_choices_region-3');
+
+console.log(tripElement1);
+
+tripElement1.addEventListener('hover', function (event) {
+ console.log(event.type + ' got fired');
+})

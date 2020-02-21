@@ -429,9 +429,17 @@ h1 {
   -ms-flex: 0 1 calc(33.33% - 30px);
   flex: 0 1 calc(33.33% - 30px);
   margin: 0 15px;
-  border: 2px solid #d8f0f0;
-  padding: 13px 13px 35px 13px;
   text-align: center;
+}
+
+.where_trip_choices_place .region_more_info {
+  padding: 13px 13px 35px 13px;
+  border: 2px solid #d8f0f0;
+}
+
+.where_trip_choices_place .where_trip_choices_region {
+  display: none;
+  margin: 0;
 }
 
 .where_trip_choice_photo img {
@@ -1079,11 +1087,33 @@ h1 {
     padding: 50px 0;
     border-bottom: 1px solid #a5a5a5;
   }
+  .where_trip_choices_regions {
+    display: none;
+  }
+  .where_trip_choices_places_row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .where_trip_choices_place {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 80%;
+    flex: 0 1 80%;
+    margin: 0 0 30px 0;
+  }
+  .where_trip_choices_place::last-child {
+    margin: 0;
+  }
   .where_trip_headline {
     font-size: 26px;
   }
   .where_trip_catalog_text {
     margin: 0 0 45px 0;
+  }
+  .where_trip_choices_place .where_trip_choices_region {
+    display: block;
   }
   .special_offer {
     padding: 50px 0;
