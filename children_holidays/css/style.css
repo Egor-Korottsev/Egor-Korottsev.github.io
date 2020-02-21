@@ -849,14 +849,27 @@ h1 {
 .education_step:after {
   position: absolute;
   top: 50%;
-  margin-top: -45px;
-  right: 7px;
-  margin-right: 0px;
+  margin-top: -81px;
+  right: 0;
+  margin-right: 25px;
   content: "";
   width: 63px;
   height: 24px;
-  background: url("../images/arrow_right.png");
+  background: url(../images/arrow_right.png);
   z-index: 99;
+}
+
+@media screen and (max-width: 1100px) {
+  .education_step:after {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .education_step:after {
+    margin-right: 0px;
+    margin-top: -90px;
+  }
 }
 
 .education_step:last-child::after {
@@ -873,6 +886,8 @@ h1 {
   font-size: 15px;
   font-weight: 300;
   margin: 0 0 28px 0;
+  width: 120px;
+  text-align: center;
 }
 
 .education_step_image {
@@ -909,16 +924,15 @@ h1 {
 }
 
 .adresses_map {
-  -webkit-box-flex: 50%;
-  -ms-flex: 50%;
-  flex: 50%;
-  margin: 0 100px 0 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
 }
 
 .adresses_info {
-  -webkit-box-flex: 50%;
-  -ms-flex: 50%;
-  flex: 50%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
 }
 
 .favourite_pictures_slider .slick-track {
@@ -987,6 +1001,7 @@ h1 {
     align-items: center;
   }
   .education_step_number {
+    width: 100%;
     margin: 0 0 15px 0;
   }
   .education_step_image {
