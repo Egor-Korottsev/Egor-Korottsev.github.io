@@ -922,6 +922,11 @@ h1 {
   margin: 0;
 }
 
+.adresses .container {
+  max-width: 100%;
+  padding-left: 0;
+}
+
 .adresses_row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -937,12 +942,118 @@ h1 {
   flex: 0 1 50%;
 }
 
-.adresses_info {
+.adresses .contacts {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 50%;
   flex: 0 1 50%;
+  padding: 98px 0 98px 100px;
+  font-size: 18px;
 }
 
+.adresses .contacts_headline {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  margin: 0 0 65px 0;
+}
+
+.adresses .contacts_address {
+  margin: 0 0 40px 0;
+}
+
+.adresses .contacts_address_city {
+  margin: 0 0 9px 0;
+}
+
+.adresses .contacts_working_hours {
+  margin: 0 0 39px 0;
+}
+
+.adresses .contacts_working_hours_headline {
+  font-size: 15px;
+  color: #007ca5;
+  margin: 0 0 21px 0;
+}
+
+.adresses .contacts_working_hours_from_monday_to_friday {
+  margin: 0 0 6px 0;
+}
+
+.adresses .contacts_support_headline {
+  font-size: 15px;
+  color: #007ca5;
+  margin: 0 0 21px 0;
+}
+
+.adresses .contacts_support_telephones {
+  font-weight: bold;
+  margin: 0 0 39px 0;
+}
+
+.adresses .contacts_support_telephone_1 {
+  margin: 0 0 7px 0;
+}
+
+.adresses .contacts_support_message {
+  line-height: 20px;
+  margin: 0 0 28px 0;
+}
+
+.adresses .contacts_support_email a {
+  color: #001e28;
+  padding: 0 0 2px 0;
+  border-bottom: 1px solid #7f8a83;
+}
+
+@media screen and (max-width: 991.98px) {
+  .adresses .container {
+    padding: 0;
+  }
+  .adresses_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .adresses_map, .adresses .contacts {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+  .adresses_map {
+    min-width: 100%;
+    margin: 0 0 50px 0;
+  }
+  .adresses_map iframe {
+    min-width: 100%;
+    height: 500px;
+  }
+  .adresses .contacts {
+    padding: 0 0 50px 0;
+    text-align: center;
+  }
+  .adresses .contacts_row {
+    padding: 0 15px;
+  }
+  .adresses .contacts_headline {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .adresses .adresses_map iframe {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .adresses .adresses_map iframe {
+    height: 350px;
+  }
+}
+
+/* favourite_pictures_slider */
 .favourite_pictures_slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
