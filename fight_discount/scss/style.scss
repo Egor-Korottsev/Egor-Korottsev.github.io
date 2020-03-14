@@ -458,7 +458,7 @@ h2{
 }
 
 .organization{
-  padding: 118px 0 100px 0;
+  padding: 118px 0 30px 0;
   text-align: center;
 
   h2{
@@ -514,7 +514,6 @@ h2{
 
   &_contact{
     text-align: center;
-    //flex: 0 1 calc(33.33% - 15px);
     flex: 0 1 calc(33.33% - 30px);
     margin: 0 15px;
     flex-wrap: wrap;
@@ -564,6 +563,91 @@ h2{
     }
   }
 }
+
+.form_section{
+  margin: 0 0 100px 0;
+}
+
+.form_inputs{
+  max-width: 83.33%;
+  margin: 0 auto;
+
+  &_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    min-width: 100%;
+  }
+
+  &_input{
+    flex: 0 1 calc(33.33% - 30px);
+    margin: 0 15px 30px 15px;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    border: 2px solid #dddddd;
+    padding: 18px;
+  }
+
+  .input_name_company{
+    display: block;
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+
+  textarea{
+    margin: 0 0 42px 0;
+    width: 100%;
+  }
+
+  .submit{
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    background: red;
+    color: #fff;
+    padding: 0 55px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 7px;
+    letter-spacing: 1px;
+
+    &_container{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.footer{
+  padding: 35px 0 19px 0;
+  background: #ffd52a;
+  text-align: center;
+
+  &_telephone{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+  }
+
+  &_img{
+    margin: 0 0 32px 0;
+  }
+
+  &_copyright{
+    font-size: 14px;
+  }
+}
+
+
+
+
+
 
 
 
@@ -625,6 +709,33 @@ h2{
           margin: 0 0 20px 0;
         }
       }
+    }
+  }
+}
+
+
+@media screen and (max-width: 863px) {
+  .form_inputs{
+    &_row{
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0;
+    }
+
+    &_input{
+      margin-right: 0;
+      margin-left: 0;
+      min-width: 100%;
+    }
+
+    .input_name_company{
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    textarea{
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
@@ -809,7 +920,7 @@ h2{
   }
 
   .organization{
-    padding: 70px;
+    padding: 70px 0;
 
     h2{
       margin: 0 0 60px 0;
@@ -829,4 +940,15 @@ h2{
       }
     }
   }
+
+  .form_section{
+    margin: 0 0 70px 0;
+  }
+
+  .form_inputs{
+    .submit{
+      min-width: 100%;
+    }
+  }
+
 }
