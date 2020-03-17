@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Muller Narrow';
+    src: url('../fonts/MullerNarrow-Light.eot');
+    src: url('../fonts/MullerNarrow-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerNarrow-Light.woff2') format('woff2'),
+        url('../fonts/MullerNarrow-Light.woff') format('woff'),
+        url('../fonts/MullerNarrow-Light.ttf') format('truetype'),
+        url('../fonts/MullerNarrow-Light.svg#MullerNarrow-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1c1c1c;
+}
+
+a{
+  color: #1c1c1c;
+}
+
+.container{
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex_row{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header{
+  padding: 11px 0;
+
+  &_section_1{
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #f4f4f4;
+
+    &_telephone > a{
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0 53px 0 0;
+    }
+  }
+
+  &_navigation{
+    li{
+      display: inline-block;
+      font-size: 14px;
+      margin: 0 30px 0 0;
+    }
+  }
+
+  &_logo{
+    img{
+      margin: 0 12px 0 0;
+    }
+
+    &_text{
+      font-size: 27px;
+      font-weight: bold;
+    }
+  }
+
+  &_section_2{
+    padding: 18px 0 0 0;
+
+    &_text{
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    &_telephone{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .application_icon{
+    margin: 0 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 38px;
+    border: 1px solid #e42626;
+    border-radius: 4px;
+
+    &:last-child{
+      margin: 0;
+    }
+  }
+
+  &_small_devices{
+    display: none;
+  }
+}
+
+.call_me{
+  background: #c91111;
+  padding: 0 19px;
+  height: 30px;
+  border-radius: 5px;
+
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 30px;
+}
+
+.personal_lawyer{
+  background: url('../img/personal_lawyer_bg.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  padding: 125px 0;
+  color: #fff;
+
+  h2{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: 50%;
+    margin: 0 0 50px 0;
+
+    .big_text{
+      font-size: 27px;
+    }
+  }
+
+  &_text{
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 41.666%;
+    margin: 0 0 57px 0;
+
+    .big_text{
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}
+
+.order_personal_lawyer{
+  display: block;
+  max-width: 300px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: #c40d0d;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 7px;
+}
+
+.services{
+  padding: 100px 0 83px 0;
+
+  h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 74px 0;
+  }
+
+  &_row{
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  .service{
+    flex: 0 1 calc(33.33% - 30px);
+    margin: 0 15px 60px 15px;
+
+    &_row{
+      justify-content: flex-start;
+    }
+
+    & img{
+      margin: 0 15px 0 0;
+    }
+
+    &_description{
+      line-height: 1.2;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .header{
+    &_section_1{
+
+      &_row{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &_telephone{
+        margin: 0 0 20px 0;
+
+        & > a{
+          margin: 0;
+        }
+      }
+    }
+
+    &_navigation{
+      margin: 0 0 20px 0;
+    }
+
+    .call_me{
+      font-size: 15px;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .services{
+    .service{
+      flex: 0 1 calc(50% - 30px);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header_section_1, .header_section_2{
+    display: none;
+  }
+
+  .header{
+    text-align: center;
+    position: relative;
+
+    &_small_devices{
+      display: block;
+    }
+
+    &_logo{
+      margin: 0 0 30px 0;
+    }
+
+    &_logo_row{
+      justify-content: flex-start;
+    }
+
+    &_navigation{
+      display: none;
+
+      li{
+        display: block;
+        text-align: center;
+        margin: 0 0 15px 0;
+        font-size: 18px;
+
+        a{
+          display: block;
+          min-width: 100%;
+        }
+      }
+
+    }
+
+    &_telephone{
+      margin: 0 0 20px 0;
+    }
+
+    .button{
+      position: absolute;
+      top: -4px;
+      right: 0;
+    }
+
+    .menu_btn{
+      display: block;
+      width: 70px;
+      height: 70px;
+      background: transparent;
+      border-radius: 3px;
+      position: relative;
+    }
+
+    .menu_btn span,
+    .menu_btn span::before,
+    .menu_btn span::after{
+      position: absolute;
+      top: 50%; margin-top: -1.5px;
+      left: 50%; margin-left: -15px;
+      height: 3px;
+      width: 30px;
+      background: #000;
+    }
+
+    .menu_btn span::before,
+    .menu_btn span::after{
+      content: '';
+      display: block;
+      transition: 0.5s;
+    }
+
+    .menu_btn span::before{
+      transform: translateY(-7px);
+    }
+
+    .menu_btn span::after{
+      transform: translateY(7px);
+    }
+
+
+  }
+
+  .call_me{
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .personal_lawyer{
+
+    h2, &_text{
+      max-width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .personal_lawyer{
+    padding: 70px 0;
+  }
+
+  .services{
+    padding: 70px 0;
+
+    h2{
+      font-size: 26px;
+      margin: 0 0 50px 0;
+    }
+
+    &_row{
+      flex-direction: column;
+    }
+
+    .service{
+      max-width: 120px;
+    }
+  }
+}
