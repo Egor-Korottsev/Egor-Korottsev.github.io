@@ -64,7 +64,6 @@ a{
 }
 
 .flex_row{
-  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -462,6 +461,125 @@ h2{
   .fa-pause-circle{
     display: none;
   }
+}
+
+.tariffs{
+  padding: 96px 0 180px 0;
+  background: #f5f5f5;
+
+  h2{
+    text-align: left;
+    margin: 0 0 37px 0;
+    color: #313131;
+  }
+
+  &_registration{
+    font-size: 18px;
+    color: #313131;
+    margin: 0 0 53px 0;
+
+    p{
+      margin: 0 0 10px 0;
+
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
+
+  &_cards{
+    &_row{
+
+    }
+  }
+
+  .tariff_card{
+    padding: 50px 19px 47px 19px;
+    background: #fff;
+    flex: 0 1 33.33%;
+
+    &_headline{
+      font-size: 20px;
+      text-align: center;
+      line-height: 1.4;
+      margin: 0 0 27px 0;
+
+      .big_text{
+        font-weight: bold;
+      }
+    }
+
+    &_image{
+      margin: 0 0 24px 0;
+      display: flex;
+      justify-content: center;
+
+      img{
+        text-align: center;
+      }
+    }
+
+    &_info{
+      margin: 0 0 50px 0;
+
+      &_element{
+        font-size: 11px;
+        padding: 11px 0;
+        border-bottom: 1px solid #f5f5f5;
+
+        &:first-child{
+          border-top: 1px solid #f5f5f5;
+        }
+
+        &_name{
+
+        }
+
+        &_value{
+          font-weight: bold;
+        }
+      }
+    }
+
+    &_price_text{
+      text-align: center;
+      font-size: 13px;
+      margin: 0 0 13px 0;
+    }
+
+    &_price{
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .button_tarrif_card{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+
+    border-radius: 7px;
+    height: 54px;
+    line-height: 54px;
+
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button_consultation{
+    background: #ff3c11;
+    margin-bottom: 27px;
+  }
+
+  .button_buy{
+    background: #9a9a9a;
+  }
+
 }
 
 
