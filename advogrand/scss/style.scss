@@ -593,6 +593,128 @@ h2{
 
 }
 
+.contacts{
+  background: #f5f5f5;
+
+  &_form{
+    flex: 0 1 41.66%;
+    padding: 0 80px 0 0;
+
+    &_headline{
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &_info{
+    flex: 0 1 58.33%;
+  }
+
+  .form_text{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 12px 0;
+  }
+
+  form input, form textarea{
+    min-width: 100%;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+
+  form input{
+    height: 48px;
+    line-height: 48px;
+  }
+
+  form textarea{
+    max-width: 100%;
+    height: 78px;
+    padding: 10px;
+    resize: none;
+  }
+
+  form .submit{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    height: 65px;
+    line-height: 65px;
+    color: #fff;
+    background: #cf0000;
+  }
+
+  &_info{
+    background: #fff;
+    padding: 100px 0 136px 160px;
+
+    .text{
+      font-size: 13px;
+      font-weight: 300;
+      margin: 0 0 10px 0;
+    }
+
+    .value{
+      font-size: 17px;
+    }
+
+    &_headline{
+      font-size: 30px;
+      font-weight: bold;
+      margin: 0 0 74px 0;
+    }
+
+    &_telephone{
+      margin: 0 0 20px 0;
+
+      &_value a{
+        font-weight: bold;
+      }
+    }
+
+    &_email{
+      margin: 0 0 20px 0;
+
+      &_value a{
+        padding: 0 0 1px 0;
+        border-bottom: 1px solid #dddddd;
+      }
+    }
+
+    &_working_hours{
+      margin: 0 0 23px 0;
+
+      &_value{
+        font-weight: bold;
+
+        p{
+          margin: 0 0 9px 0;
+
+          &:last-child{
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    &_holiday_hours{
+      p.value{
+        margin: 0 0 10px 0;
+        font-weight: bold;
+
+        &:last-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
 
 @media screen and (max-width: 992px) {
   .header{
@@ -621,6 +743,11 @@ h2{
       height: 35px;
       line-height: 35px;
     }
+  }
+
+  .contacts_info{
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
@@ -679,6 +806,22 @@ h2{
         flex: 0 1 70%;
         margin: 0;
       }
+    }
+  }
+
+  .contacts{
+
+    &_row{
+      flex-direction: column;
+    }
+
+    &_form{
+      margin: 0 0 50px 0;
+      padding: 0;
+    }
+
+    &_info{
+      min-width: 80%;
     }
   }
 }
@@ -849,6 +992,22 @@ h2{
   .tariffs{
     &_cards_row{
       flex-direction: column;
+    }
+  }
+
+  .contacts{
+
+    &_row{
+      flex-direction: column;
+    }
+
+    &_form{
+      margin: 0 0 50px 0;
+      padding: 0;
+    }
+
+    &_info{
+      min-width: 100%;
     }
   }
 
