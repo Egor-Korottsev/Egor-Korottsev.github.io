@@ -1,5 +1,5 @@
 html{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body{
@@ -9,6 +9,12 @@ body{
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 .header{
@@ -39,6 +45,10 @@ body{
     padding: 10px 15px;
     background: #fff;
     border-radius: 10px;
+}
+
+.main{
+    flex-grow: 1;
 }
 
 .main-text{
@@ -88,35 +98,34 @@ input{
     font-weight: bold;
 }
 
-.user-info{
-    margin-bottom: 30px;
+.user-login{
+    color: #fff;
 }
 
-.user-info-parametr{
-    font-size: 18px;
+.some{
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.courses-container{
-    display: flex;
-    justify-content: center;
+.module{
+    padding: 10px 7px;
+    background: #E0E0E0;
+    border-left: 15px solid green;
+    margin-bottom: 10px;
 }
 
-.courses-title{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.course{
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 10px 80px 10px 10px;
-}
-
-.course-title a{
+.module-number{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #000;
-    text-decoration: none;
+}
+
+.submodule{
+    margin-left: 30px;
+}
+
+.text-progress{
+    text-transform: uppercase;
+    margin-left: 8px;
 }
 
