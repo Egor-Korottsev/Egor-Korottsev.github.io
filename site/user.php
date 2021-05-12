@@ -11,7 +11,7 @@
     <header class="header">
         <div class="container header-container">
             <div class="header-text">C# Программирование <span class="bold text-progress">   Прогресc</span></div>
-            <div class="user-login">maxgreat</div>
+            <div class="user-login"><?php echo $_COOKIE['login']; ?></div>
         </div>
     </header>
     <div class="main">
