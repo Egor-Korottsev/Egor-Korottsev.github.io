@@ -13,6 +13,16 @@ body{
     flex-direction: column;
 }
 
+ul, li{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -127,5 +137,71 @@ input{
 .text-progress{
     text-transform: uppercase;
     margin-left: 8px;
+}
+
+.header-special{
+    margin: 0;
+}
+
+.special-container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+.left{
+    width: 20%;
+    background: #000;
+    color: white;
+    min-height: 85vh;
+    padding: 10px 30px;
+}
+
+.right{
+    width: 80%;
+}
+
+.right-container{
+    padding: 15px 20px;
+}
+
+.lecture-progress{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lecture-progress-item{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 16.666%;
+    background: #E0E0E0;
+}
+
+.lecture-progress-item-active{
+    background: grey;
+}
+
+.lecture-info{
+    margin-bottom: 20px;
+}
+
+.button-next-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button-next{
+    padding: 10px 15px;
+    text-decoration: none;
+    background: #54ad54;
+    border: 1px solid black;
+    color: #fff;
+    font-weight: bold;
+}
+
+.button-unactive{
+    display: none;
 }
 

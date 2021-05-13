@@ -15,10 +15,10 @@
 
             $params = [$login, $password];
 
+           
             $data->execute($params);
 
             $result = $data->fetch(PDO::FETCH_OBJ);
-
             if($result) {
                 setcookie("login", $login);
                 header('Location: /site/user.php');
