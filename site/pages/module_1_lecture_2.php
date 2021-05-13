@@ -42,27 +42,26 @@
             </div>
             <div class="right">
                     <div class="lecture-progress">
-                        <div class="lecture-progress-item lecture-progress-item-active"> &nbsp; </div>
-                        <div class="lecture-progress-item"> ? </div>
                         <div class="lecture-progress-item"> &nbsp; </div>
+                        <div class="lecture-progress-item"> ? </div>
+                        <div class="lecture-progress-item lecture-progress-item-active"> &nbsp; </div>
                         <div class="lecture-progress-item"> ? </div>
                         <div class="lecture-progress-item"> &nbsp; </div>
                         <div class="lecture-progress-item"> ? </div>
                     </div>
                     <div class="right-container">
                         <div class="lecture-info">
-                            <h2>ПЕРЕМЕННЫЕ</h2>
-                            <p>Программы используют данные для выполнения заданий. Создание переменной резервирует место в памяти для хранения значений. 
-                                Она называется переменной, потому что информация, хранящаяся в этой локации,
-                                 может быть изменена при выполнении программы.</p>
-                            <p>Для использования переменной, она должна быть объявлена с указанием имени и типа данных.</p>
-                            <p>Имя переменной, также известное, как идентификатор, может содержать буквы, цифры и символ нижнего подчеркивания (_) и должно начинаться с буквы или нижнего подчеркивания.
-                            </p>
-                            <p> Хоть именем переменной может быть любой набор букв и цифр, наилучший идентификатор является описанием информации,
-                                 которую он содержит. Это очень важно для создания ясного, понятного и читаемого кода.</p>     
+                            <h2>ВСТРОЕННЫЕ ТИПЫ ДАННЫХ</h2>
+                            <p>Существует множество встроенных типов данных в языке C# Наиболее часто используемыми являются:</p>
+                            <p><b>int</b> - целое число.</p>
+                            <p><b>float</b> - число с плавающей точкой.</p>
+                            <p><b>double</b> - число с плавающей точкой удвоенной точности.</p>
+                            <p><b>char</b> - один символ.</p>
+                            <p><b>bool</b> - булевый тип, который может иметь только два значения: True (Истина) или False (Ложь).</p>
+                            <p><b>string</b> - последовательность символов.</p>   
                         </div>
                         <div class="button-next-container">
-                            <a class="button-next" href="module_1_test_1.php">Продолжить</a>
+                            <a class="button-next" href="module_1_lecture_3.php">Продолжить</a>
                         </div>
                     </div>
                 </div>

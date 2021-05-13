@@ -13,6 +13,10 @@ body{
     flex-direction: column;
 }
 
+ul{
+    list-style-type: none;
+}
+
 ul, li{
     padding: 0;
     margin: 0;
@@ -92,7 +96,9 @@ a{
 }
 
 h2{
-    
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 input{
@@ -157,6 +163,18 @@ input{
     padding: 10px 30px;
 }
 
+.left_module_name, .left_themes_name{
+    border-left: 3px solid green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+    padding-left: 5px;   
+}
+
+.left_themes_name{
+    margin-left: 20px;
+}
+
 .right{
     width: 80%;
 }
@@ -177,6 +195,8 @@ input{
     border: 1px solid black;
     width: 16.666%;
     background: #E0E0E0;
+    display: flex;
+    justify-content: center;
 }
 
 .lecture-progress-item-active{
@@ -203,5 +223,13 @@ input{
 
 .button-unactive{
     display: none;
+}
+
+.lecture-info{
+    font-size: 18px;
+}
+
+.form_send{
+    margin-bottom: 10
 }
 

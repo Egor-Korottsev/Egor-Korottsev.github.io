@@ -42,12 +42,4 @@
     }
 
     header('Location: /site/pages/module_1_test_1.php');
-
-    //$data = $connection->prepare("SELECT id, result FROM `passed_themes` WHERE `id` = ?");
-    //$data = $connection->prepare("SELECT id, result FROM `passed_themes` WHERE `id` = ?");
-    //$params = [1];
-    //$data->execute($params);
-    //$themes = $data->fetchAll(PDO::FETCH_OBJ);
-
-    //header('Location: /site/pages/module_1_test_1.php');
 ?>
