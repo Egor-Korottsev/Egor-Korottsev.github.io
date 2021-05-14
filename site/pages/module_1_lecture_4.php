@@ -18,26 +18,12 @@
     <div class="main">
         <div class="special-container">
         <div class="left">
-                <?php 
-                    //получение списка тем для модуля
-                    $connection = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
-                    $data = $connection->prepare("SELECT * FROM `themes` WHERE `id_module` = ?");
-                    $params = [1];
-                    $data->execute($params);
-                    $themes = $data->fetchAll(PDO::FETCH_OBJ);
-
-                    //получение имени модуля из бд
-                    $data = $connection->prepare("SELECT module_name FROM `modules` WHERE `id` = ?");
-                    $params = [1];
-                    $data->execute($params);
-                    $module_name = $data->fetch(PDO::FETCH_OBJ);
-                ?>
-                <ul>
-                    <div class="left_module_name"><?php echo $module_name->module_name; ?></div>
-                    <?php foreach($themes as $line) { ?>
-                        <li class="left_themes_name"><?php echo $line->theme_name; ?></li>
-                    <?php } ?>
-                </ul>
+        <ul>
+                    <div class="left_module_name"><a class="left-a" href="module_1_lecture_1.php">Базовая концепция или Основы с#</a></div>
+                    <li class="left_themes_name"><a class="left-a" href="module_1_lecture_1.php">Переменные</a></li>
+                    <li class="left_themes_name"><a class="left-a" href="module_1_lecture_3.php">Отображение вывода</a></li>
+                    <li class="left_themes_name"><a class="left-a" href="module_1_lecture_4.php">Комментарии</a></li>
+                </ul>     
             
             </div>
             <div class="right">

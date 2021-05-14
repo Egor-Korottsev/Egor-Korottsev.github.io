@@ -6,9 +6,9 @@
         $data->execute([$_COOKIE['login']]);
         $user_id = $data->fetch(PDO::FETCH_OBJ)->id;
 
-        echo $user_id;
+        //echo $user_id;
 
-        $data = $connection->prepare("SELECT answer FROM `tests` WHERE `id` = ?");
+        $data = $connection->prepare("SELECT answer FROM `tests` WHERE `id_test` = ?");
         $id_test = 1;
         $params = [$id_test];
         $data->execute($params);
@@ -39,8 +39,6 @@
         $data = $connection->prepare("INSERT INTO `passed_tests`(`id_user`, `id_test`, `result`) VALUES(?, ?, ?)");
         $params = [$user_id, $id_test, $value];
         $data->execute($params);
-
-        //$data = $connection->prepare("INSERT INTO `passed_themes` (`id_user`, `id_theme`, `result`) VALUES(?, ?, ?)");
     }
 
     header('Location: /site/pages/module_1_test_1.php');

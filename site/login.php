@@ -1,4 +1,10 @@
+<?php 
+        if(isset($_COOKIE['login'])) {
+            header('Location: /site/user.php');
+        }
+    ?>
 <?php
+
     $wrongUser = '';
 
     if(count($_POST) > 0) {

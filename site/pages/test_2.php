@@ -6,13 +6,13 @@
         $data->execute([$_COOKIE['login']]);
         $user_id = $data->fetch(PDO::FETCH_OBJ)->id;
 
-        $data = $connection->prepare("SELECT answer FROM `tests` WHERE `id` = ?");
+        //echo $user_id;
+
+        $data = $connection->prepare("SELECT answer FROM `tests` WHERE `id_test` = ?");
         $id_test = 2;
         $params = [$id_test];
         $data->execute($params);
         $answers = $data->fetchAll(PDO::FETCH_OBJ);
-
-        var_dump($answers);
 
         $isCorrect = false;
     
