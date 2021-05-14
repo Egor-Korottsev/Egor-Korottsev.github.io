@@ -42,12 +42,9 @@
             </div>
             <div class="right">
                     <div class="lecture-progress">
-                        <div class="lecture-progress-item"> > </div>
+                        <div class="lecture-progress-item "> &nbsp; </div>
                         <div class="lecture-progress-item lecture-progress-item-active"> ? </div>
-                        <div class="lecture-progress-item"> > </div>
-                        <div class="lecture-progress-item"> ? </div>
-                        <div class="lecture-progress-item"> > </div>
-                        <div class="lecture-progress-item"> ? </div>
+                        <div class="lecture-progress-item"> &nbsp; </div>
                     </div>
                     <div class="right-container">
                         <div class="lecture-info">
@@ -57,10 +54,10 @@
                                 $data = $connection->prepare("SELECT id FROM `users` WHERE login = ?");
                                 $data->execute([$_COOKIE['login']]);
                                 $user_id = $data->fetch(PDO::FETCH_OBJ)->id;
-                                $theme_id = 1;
+                                $test_id = 1;
 
-                                $data = $connection->prepare("SELECT id, result FROM `passed_tests` WHERE `id_user` = ? AND `id_theme` = ?");
-                                $params = [$user_id, $theme_id];
+                                $data = $connection->prepare("SELECT id, result FROM `passed_tests` WHERE `id_user` = ? AND `id_test` = ?");
+                                $params = [$user_id, $test_id];
                                 $data->execute($params);
                                 $result = $data->fetch(PDO::FETCH_OBJ);
 

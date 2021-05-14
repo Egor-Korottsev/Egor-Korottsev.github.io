@@ -197,6 +197,7 @@ input{
     background: #E0E0E0;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .lecture-progress-item-active{

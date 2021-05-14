@@ -44,10 +44,6 @@
                     <div class="lecture-progress">
                         <div class="lecture-progress-item lecture-progress-item-active"> &nbsp; </div>
                         <div class="lecture-progress-item"> ? </div>
-                        <div class="lecture-progress-item"> &nbsp; </div>
-                        <div class="lecture-progress-item"> ? </div>
-                        <div class="lecture-progress-item"> &nbsp; </div>
-                        <div class="lecture-progress-item"> ? </div>
                     </div>
                     <div class="right-container">
                         <div class="lecture-info">

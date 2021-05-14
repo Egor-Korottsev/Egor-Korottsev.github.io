@@ -47,17 +47,16 @@
                     </div>
                     <div class="right-container">
                         <div class="lecture-info">
-                            Что выведет следующий код?Какие переменные являются подходящими для языка?
-                            <p> int a = 4;</p>
-                            <p> int b = 2;</p>
-                            <p> Console.Write(a);</p>   
-                            <p> Console.Write(b); </p>    
+                            Что выведет следующий код?
+                            <p> int x = 8;</p>
+                            <p> // x = 2; </p>
+                            <p> Console.WriteLine(x);</p>    
                             <?php 
                                 $connection = new PDO('mysql:host=localhost;dbname=mydb;charset=utf8', 'root', '');
                                 $data = $connection->prepare("SELECT id FROM `users` WHERE login = ?");
                                 $data->execute([$_COOKIE['login']]);
                                 $user_id = $data->fetch(PDO::FETCH_OBJ)->id;
-                                $test_id = 2;
+                                $test_id = 4;
 
                                 $data = $connection->prepare("SELECT id, result FROM `passed_tests` WHERE `id_user` = ? AND `id_test` = ?");
                                 $params = [$user_id, $test_id];
@@ -74,11 +73,10 @@
                                 } 
                             ?>
 
-                            <form method="POST" action="test_2.php" class="form_send">
-                                <input type="checkbox" name="answers[]" value="24" /> 24 <br>
+                            <form method="POST" action="test_3.php" class="form_send">
+                                <input type="checkbox" name="answers[]" value="error" /> error <br>
+                                <input type="checkbox" name="answers[]" value="8" /> 8 <br>
                                 <input type="checkbox" name="answers[]" value="2" /> 2 <br>
-                                <input type="checkbox" name="answers[]" value="4" /> 4 <br>
-                                <input type="checkbox" name="answers[]" value="42" /> 42 <br>
                                 <input type="submit" value="Отправить" class="<?php echo $classForDisabled ?>">
                             </form>
 
